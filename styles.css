@@ -1,0 +1,246 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:auto px;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 900 auto;
+    text-align: left;
+    margin: 0 auto;
+    
+}
+
+
+.header {
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-color: #E90039;
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border: 2px solid rgb(235, 229, 229);
+}
+
+@font-face {
+    font-family: 'Dundee Bold';
+    src: url('DundeeBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header .text {
+    font-family: 'Dundee Bold', sans-serif; /* Apply Dundee Bold font */
+    font-size: 27px;
+    color: white;
+    line-height: 1; 
+    margin: 0;
+}
+
+
+.content {
+    text-align: left;
+    padding: 110px;
+    max-width: 810px;
+    margin: 0 auto;
+    @font-face {
+        font-family: 'FuturaEF Heavy';
+        src: url('FuturaEF-Heavy.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    body {
+        font-family: 'FuturaEF Heavy', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+    
+    h1 {
+        font-family: 'FuturaEF Heavy', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: #222;
+    }
+    
+    
+}
+
+.content h1 {
+    font-size: 33 px;
+    margin-bottom: 20px;
+    color: #333;
+    @font-face {
+        font-family: "Twentieth Century Bold";
+        src: url('Twentieth Century Bold.ttf') format('truetype');
+    }
+
+    
+}
+
+@font-face {
+    font-family: 'Futura No. 2 Medium';
+    src: url('futura-no-2-medium-dee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content p {
+    font-family: 'Futura No. 2 Medium', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.assistance {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #19DAC9;
+    max-width: 800px;
+    padding: 40px;
+    color: white;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    font-family: 'Graphicus DT Oblique';
+            src: 
+                 url('graphicusdt-oblique.ttf') format('woff');
+            font-weight: normal;
+            font-style: oblique;
+}
+
+.assistance .content {
+    flex: 1;
+    
+    
+}
+
+.assistance h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.assistance p {
+    margin: 0;
+    padding: 0;
+}
+
+.assistance .contact-btn {
+    background-color: white;
+    color: #19DAC9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    right: 200px;
+    top: 65%;
+    transform: translateY(-120%);
+    
+}
+
+
+
+.footer {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: #E90039;
+    text-align: center;
+    padding: 150px;
+    margin-top: 200px;
+    
+}
+
+
+@font-face {
+    font-family: 'Futura TS ExtraBold';
+    src: url('futura-ts-extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.footer p {
+    color: white;
+    font-size: 10px;
+    font-family: 'Futura TS ExtraBold', sans-serif;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none; /* Optional: Removes underline from links */
+}
+
+.footer img {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #E90039; /* Adds a red border */
+    border-radius: 5px; /* Optional: Adds slight rounding to corners */
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    /* Add styles here if needed, such as border, padding, etc. */
+}
+
+
+@font-face {
+    font-family: 'Twentieth Century Pro Bold';
+    src: url('TwentiethCenturyProBold.ttf') format('truetype');
+}
+
+
+/* General Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Adjusting .footer styles for mobile */
+    .footer p {
+        font-size: 8px; /* Smaller font size for readability on mobile */
+    }
+
+    .footer a {
+        margin: 0 5px; /* Adjust margin for better spacing on smaller screens */
+    }
+
+    .footer img {
+        height: 25px; /* Adjust image height for mobile */
+        width: 30px; /* Adjust image width for mobile */
+        border-width: 1px; /* Reduce border thickness */
+    }
+
+    .social-icon {
+        height: 35px; /* Smaller icon size for mobile */
+        width: 35px;
+    }
+
+    /* Mobile adjustments for .assistance .contact-btn */
+    .assistance .contact-btn {
+        right: auto;
+        left: 50%; /* Center horizontally */
+        width: 20%; /* Make button width flexible */
+        top: 70%;
+        transform: translateX(50%) translateY(50%); /* Center button and move up */
+        font-size: 14px; /* Adjust font size for button text */
+        padding: 10px 20px; /* Adjust padding for better tap targets */
+      
+    }
+}
+
+/
